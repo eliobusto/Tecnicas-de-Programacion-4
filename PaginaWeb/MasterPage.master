@@ -1,0 +1,31 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        <h2>
+            <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/adm_autos.aspx">Administraci&oacute;n de Autos</asp:HyperLink> &nbsp;- 
+            <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/adm_marcas.aspx">Administraci&oacute;n de Marcas</asp:HyperLink> &nbsp;- 
+            <asp:HyperLink ID="HyperLink3" runat="server" NavigateUrl="~/adm_modelos.aspx">Administraci&oacute;n de Modelos</asp:HyperLink> &nbsp;- 
+            <asp:HyperLink ID="HyperLink4" runat="server" 
+                NavigateUrl="~/alquiler_autos.aspx">Alquiler de Autos</asp:HyperLink>
+        </h2>
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        
+        </asp:ContentPlaceHolder>
+        
+        <h3>TP4 - Regularidad Extraordinaria - Busto Elio</h3>
+    </div>
+    
+    </form>
+</body>
+</html>
